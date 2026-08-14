@@ -1,0 +1,269 @@
+/* Lea — shared styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  --bg: #f2ece0;
+  --bg-outer: #dcd5c6;
+  --ink: #201f1d;
+  --secondary: #605d5d;
+  --mute: #8a7a5c;
+  --gold: #b68235;
+  --gold-text: #7d5411;
+  --gold-tint-10: rgba(182, 130, 53, 0.1);
+  --gold-tint-14: rgba(182, 130, 53, 0.14);
+  --gold-tint-20: rgba(182, 130, 53, 0.2);
+  --dark: #191510;
+  --cream: #efe6d5;
+  --ember: #e1ad66;
+  --divider: rgba(32, 31, 29, 0.16);
+  --danger: #c0392b;
+  --danger-text: #8a3324;
+
+  --radius-sm: 4px;
+  --radius-card: 14px;
+  --radius-pill: 9999px;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 10px;
+  --sp-4: 14px;
+  --sp-5: 20px;
+  --sp-6: 30px;
+  --sp-7: 44px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-outer);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse at top, rgba(182, 130, 53, 0.06), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(32, 31, 29, 0.03), transparent 55%);
+  color: var(--ink);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .wordmark {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--gold-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-tint-20);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+a:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.wordmark {
+  display: inline-block;
+  line-height: 0;
+  border-bottom: none;
+}
+
+.wordmark:hover {
+  border-bottom: none;
+  opacity: 0.85;
+}
+
+.logo-small {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+/* Site header used on legal pages */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--sp-6) var(--sp-5) var(--sp-5);
+}
+
+.site-header nav a {
+  margin-left: var(--sp-5);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  border-bottom: 1px solid transparent;
+}
+
+.site-header nav a:hover {
+  color: var(--gold-text);
+  border-bottom-color: var(--gold-tint-20);
+}
+
+/* Coming soon page */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--sp-6);
+}
+
+.hero .logo-large {
+  width: clamp(220px, 32vw, 340px);
+  height: auto;
+}
+
+.hero .rule {
+  width: 56px;
+  height: 1px;
+  background: var(--gold);
+  border: none;
+  margin: var(--sp-5) 0;
+}
+
+.hero .tagline {
+  font-style: italic;
+  color: var(--secondary);
+  font-size: 1.15rem;
+  margin: 0 0 var(--sp-2);
+  max-width: 32ch;
+}
+
+.hero .status {
+  color: var(--mute);
+  font-size: 0.95rem;
+  margin: var(--sp-2) 0 0;
+  letter-spacing: 0.02em;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: var(--sp-6);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.hero-footer nav a {
+  font-size: 0.85rem;
+  color: var(--mute);
+  margin: 0 var(--sp-3);
+  border-bottom: 1px solid transparent;
+}
+
+.hero-footer nav a:hover {
+  color: var(--gold-text);
+  border-bottom-color: var(--gold-tint-20);
+}
+
+/* Legal pages */
+.legal-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--sp-5) var(--sp-7);
+}
+
+.legal-page h1 {
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: var(--sp-1);
+}
+
+.legal-page .updated {
+  color: var(--mute);
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: var(--sp-6);
+}
+
+.legal-page .intro {
+  color: var(--secondary);
+  margin-bottom: var(--sp-6);
+}
+
+.legal-page section {
+  margin-bottom: var(--sp-6);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--divider);
+}
+
+.legal-page section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.legal-page h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: var(--sp-3);
+}
+
+.legal-page p {
+  margin: 0 0 var(--sp-3);
+}
+
+.placeholder {
+  display: block;
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+  color: var(--mute);
+  background: var(--gold-tint-10);
+  border: 1px dashed var(--gold-tint-20);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-4);
+  font-size: 0.95rem;
+}
+
+.legal-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--sp-5);
+  border-top: 1px solid var(--divider);
+  color: var(--mute);
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.legal-footer a {
+  color: var(--mute);
+  border-bottom: 1px solid transparent;
+}
+
+.legal-footer a:hover {
+  color: var(--gold-text);
+  border-bottom-color: var(--gold-tint-20);
+}
+
+.legal-footer .links a {
+  margin-left: var(--sp-4);
+}
+
+@media (max-width: 480px) {
+  .legal-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .legal-footer .links a:first-child {
+    margin-left: 0;
+  }
+}
