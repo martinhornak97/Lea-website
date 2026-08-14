@@ -18,89 +18,149 @@
 
   <main class="legal-page">
     <h1>Privacy Policy</h1>
-    <p class="updated"><!-- PLACEHOLDER --> Last updated: [DATE]</p>
+    <p class="updated">Effective date: 14 August 2026 · Last updated: 14 August 2026</p>
 
-    <p class="intro">
-      <span class="placeholder"><!-- PLACEHOLDER: intro -->
-        Add a short introduction here — e.g. that Lea is designed with privacy as a core
-        principle: no account, no login, and no backend server. Reading data (library,
-        sessions, stats) stays on the user's device.
-      </span>
-    </p>
+    <div class="intro">
+      <p>Lea is a reading tracker and focus app. This Privacy Policy explains how information is handled when you use the Lea mobile application (the <strong>App</strong>).</p>
+      <p>Lea does not require an account, and we do not operate a server or cloud database that stores your bookshelf, reading history, reading notes, name, or cover photos. That information stays on your device unless you choose to export or share it. Some App features do, however, send limited information to third-party service providers as described below. Those transfers count as data collection even though Lea has no user-account database.</p>
+    </div>
 
     <section>
-      <h2>Information We Collect</h2>
-      <p class="placeholder"><!-- PLACEHOLDER -->
-        Add your content here. Consider distinguishing:
-        <br />— Data stored only on-device (library, reading sessions, notes, stats) — never
-        transmitted anywhere unless the user manually exports it.
-        <br />— Any third-party data lookups (e.g. Google Books / Open Library search when
-        adding a book) and what's sent to them.
-        <br />— Any analytics or crash-reporting SDKs in use, if any, and what they collect.
-        <br />— Purchase data handled by RevenueCat / the App Store / Play Store for Lea Pro.
-      </p>
+      <h2>1. Who is responsible for Lea</h2>
+      <p>Lea is operated by <strong>VISTE LTD</strong>, a company registered in England and Wales under company number <strong>13232923</strong>, with its registered office at <strong>87 Chancery Lane, Third Floor, A&amp;T, London, United Kingdom, WC2A 1ET</strong> (<strong>Lea</strong>, <strong>we</strong>, <strong>us</strong>, or <strong>our</strong>).</p>
+      <p>For privacy questions or requests, contact <a href="mailto:support@leareads.com">support@leareads.com</a>.</p>
+      <p>If you are in the European Economic Area, United Kingdom, or another jurisdiction using the concept of a data controller, the operator named above is the controller of personal data processed through the App, except where a third-party provider acts as an independent controller.</p>
     </section>
 
     <section>
-      <h2>How We Use Information</h2>
-      <p class="placeholder"><!-- PLACEHOLDER --> Add your content here.</p>
+      <h2>2. Information kept only on your device</h2>
+      <p>The App stores the following information locally on your device so its features can work:</p>
+      <ul>
+        <li>your optional display name and App preferences;</li>
+        <li>your bookshelf and book details, such as titles, authors, ISBNs, cover images, page counts, and reading progress;</li>
+        <li>reading-session information, including dates, duration, goals, page progress, and notes you enter;</li>
+        <li>reminder time, language, appearance, sorting, and quiet-mode settings;</li>
+        <li>locally cached book-search results and request-limit information;</li>
+        <li>your analytics preference; and</li>
+        <li>temporary information needed to maintain an active reading session.</li>
+      </ul>
+      <p>This information is stored in the App's private local storage, including a local SQLite database. We cannot view or retrieve it from your device.</p>
+      <p>You can erase this information using <strong>Erase everything</strong> in the App. Uninstalling the App will normally remove its private local data, subject to your operating system's backup and restore behavior.</p>
     </section>
 
     <section>
-      <h2>Local Storage &amp; Export</h2>
-      <p class="placeholder"><!-- PLACEHOLDER -->
-        Add your content here — e.g. that data lives in on-device SQLite storage, that
-        deleting the app deletes the data, and that manual JSON export/import is the only
-        way to back up or transfer data.
-      </p>
+      <h2>3. Camera, photos, files, notifications, and device settings</h2>
+      <p>The App asks for access only when needed for a feature you choose to use:</p>
+      <ul>
+        <li><strong>Camera.</strong> Used to scan an ISBN barcode or book spine, or to take a book-cover photo. Barcode scanning and spine text recognition are performed on the device. Captured spine images are not sent to us or to the book-search providers and are deleted from the App's temporary cache on a best-effort basis after processing. Text recognized from a spine may be used as a Google Books search query as explained below. A cover photo you choose to save remains on your device.</li>
+        <li><strong>Photo library.</strong> Used to let you choose a book-cover image. The selected and cropped image is stored locally and is not uploaded by us.</li>
+        <li><strong>Notifications.</strong> Used to schedule reading reminders locally on your device. Lea does not use a Lea-operated server to send push notifications.</li>
+        <li><strong>Do Not Disturb access on Android.</strong> If you enable quiet mode and grant this special system access, Lea may temporarily change the device's interruption filter during a reading session. Lea does not read your notifications.</li>
+        <li><strong>Files and sharing.</strong> You may import a Lea backup file or export a backup through your device's share sheet. An exported backup can contain your bookshelf, settings, reading sessions, notes, and optional name. Once you send it to another app, cloud drive, person, or service, its handling is controlled by your choice and that recipient's privacy practices. Temporary export files are deleted by Lea on a best-effort basis after the share flow.</li>
+      </ul>
+      <p>You can deny or revoke permissions in your device settings, although the related feature may then be unavailable.</p>
     </section>
 
     <section>
-      <h2>Third-Party Services</h2>
-      <p class="placeholder"><!-- PLACEHOLDER -->
-        Add your content here — e.g. Google Books API, Open Library API, RevenueCat (for
-        subscription management), and platform providers (Apple App Store / Google Play).
-      </p>
+      <h2>4. Information sent to third-party services</h2>
+      <h3>Book search: Google Books and Open Library</h3>
+      <p>When you search for a book, scan a spine, or scan/enter an ISBN, the search text, text recognized from the spine, or ISBN is sent directly from your device to Google Books. For an ISBN lookup that does not produce an exact Google Books result, the ISBN may also be sent to Open Library. These providers receive the request and standard network information, such as your IP address, and return book metadata and cover links. Lea does not send your bookshelf, reading history, notes, or photos with these requests.</p>
+      <p>The returned book information may be cached locally on your device. Google and the Internet Archive/Open Library handle information under their own policies:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://archive.org/about/terms.php#privacy">Internet Archive Privacy Policy</a></li>
+      </ul>
+      <h3>Purchases: Apple, Google, and RevenueCat</h3>
+      <p>Lea uses RevenueCat to offer and verify in-app purchases and subscriptions. RevenueCat is initialized with an automatically generated anonymous App User ID; Lea does not give RevenueCat your name or email address. RevenueCat may receive device type, operating-system information, last-seen time, subscription status, product and transaction information, and an Apple receipt or Google purchase token. Apple or Google processes your payment details. We do not receive your full payment-card or bank-account information.</p>
+      <p>These services handle information under their own policies:</p>
+      <ul>
+        <li><a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a></li>
+        <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      </ul>
+      <h3>Optional product analytics: PostHog</h3>
+      <p>If you affirmatively choose to enable analytics, the App sends limited product-usage events to PostHog's EU service. Analytics is optional, is off by default, is not required to use Lea or make a purchase, and does not start before you make that choice. The events may include:</p>
+      <ul>
+        <li>an automatically generated anonymous identifier;</li>
+        <li>App screens and onboarding actions;</li>
+        <li>broad reading-plan choices, such as a goal duration, time-of-day category, or screen-time number entered during onboarding;</li>
+        <li>whether a notification permission was granted or denied;</li>
+        <li>purchase-flow outcomes such as purchased, restored, cancelled, or error, but not payment details; and</li>
+        <li>scanner performance measurements, such as platform, processing stage, result, duration, confidence category, image orientation, and counts of recognized lines or candidates.</li>
+      </ul>
+      <p>Analytics events do <strong>not</strong> include your name, bookshelf, book titles, authors, ISBNs, reading notes, photos, recognized text, or exact reading history. Lea does not use PostHog session replay, person profiles, advertising, remote surveys, automatic crash capture, or precise-location enrichment. Standard network and technical information may still accompany a request, including IP address, App/OS version, device type, locale, time zone, and an App-generated identifier; PostHog is configured not to use the IP address for geolocation.</p>
+      <p>Lea does not use PostHog data for advertising, advertising measurement, data brokerage, or tracking you across apps or websites owned by other companies. The App does not access the advertising identifier for PostHog analytics.</p>
+      <p>You can withdraw your analytics consent at any time using Lea's in-App analytics privacy control. This stops future analytics collection and does not affect your access to Lea. Withdrawal does not affect processing that occurred before withdrawal. You may also contact us to request deletion of analytics data; because Lea has no account and uses an anonymous identifier, we may need information from your device and may not be able to identify a particular record without it.</p>
+      <p>See the <a href="https://posthog.com/privacy">PostHog Privacy Policy</a> for more information.</p>
+      <h3>Contacting support</h3>
+      <p>If you email us, we receive your email address and whatever information you choose to include. Please do not send a Lea backup or sensitive reading notes unless they are necessary for your request and you are comfortable sharing them.</p>
     </section>
 
     <section>
-      <h2>Notifications</h2>
-      <p class="placeholder"><!-- PLACEHOLDER -->
-        Add your content here — local device notifications (daily reading reminder,
-        Do Not Disturb during sessions) are scheduled on-device and not tied to any
-        push/analytics service.
-      </p>
+      <h2>5. How and why we use information</h2>
+      <p>Depending on where you live, our legal bases for processing are:</p>
+      <ul>
+        <li><strong>Performance of a contract:</strong> to provide book lookup, purchase verification, subscription access, and requested support;</li>
+        <li><strong>Consent:</strong> for optional analytics and for device permissions where consent is required; you may withdraw consent at any time without affecting the lawfulness of earlier processing;</li>
+        <li><strong>Legitimate interests:</strong> to operate, secure, troubleshoot, and improve Lea, provided those interests are not overridden by your rights; and</li>
+        <li><strong>Legal obligations:</strong> where information must be retained or disclosed to comply with tax, accounting, consumer-protection, law-enforcement, or other legal requirements.</li>
+      </ul>
+      <p>We do not sell personal information. We do not use personal information for targeted advertising or track you across apps or websites owned by other companies. We require service providers processing personal data on our behalf to provide the same or an equivalent level of protection described in this Policy and required by applicable law, to process it only on our documented instructions, and not to use it for their own advertising or unrelated purposes.</p>
     </section>
 
     <section>
-      <h2>Children's Privacy</h2>
-      <p class="placeholder"><!-- PLACEHOLDER --> Add your content here.</p>
+      <h2>6. Retention</h2>
+      <ul>
+        <li>Information stored by Lea on your device remains there until you delete it, erase App data, or uninstall the App, subject to device backups and exported copies.</li>
+        <li>Temporary camera and export files are deleted on a best-effort basis after their immediate purpose is complete.</li>
+        <li>Book-search providers and app stores retain information according to their own policies. RevenueCat and PostHog retain information according to our service settings and applicable contracts. We retain or instruct processors to retain remotely processed information only for as long as reasonably necessary for the purposes described above, to meet legal obligations, prevent fraud, or resolve disputes, after which it is deleted or anonymized where required.</li>
+        <li>Support correspondence is kept only as long as reasonably necessary to answer the request, maintain appropriate business records, and meet legal obligations.</li>
+      </ul>
+      <p>Because Lea has no account system, we may need an anonymous service identifier or transaction details to locate information held by a service provider. In some cases, we may not be able to link remotely held anonymous data to you without information from your device.</p>
     </section>
 
     <section>
-      <h2>Your Rights &amp; Choices</h2>
-      <p class="placeholder"><!-- PLACEHOLDER -->
-        Add your content here — e.g. since there's no account or server-side data, most
-        rights (access, deletion) are exercised directly on-device by the user.
-      </p>
+      <h2>7. International data transfers</h2>
+      <p>Our providers may process information in countries other than the country where you live. PostHog analytics is configured for EU hosting, but its group companies or subprocessors may operate elsewhere. RevenueCat, Apple, Google, and the Internet Archive may also process information internationally. Where required, we rely on recognized safeguards such as adequacy decisions, standard contractual clauses, or providers' participation in an approved data-transfer framework.</p>
     </section>
 
     <section>
-      <h2>Changes to This Policy</h2>
-      <p class="placeholder"><!-- PLACEHOLDER --> Add your content here.</p>
+      <h2>8. Your privacy rights</h2>
+      <p>Depending on your location, you may have the right to request access to, correction of, deletion of, or a copy of your personal data; to restrict or object to processing; to withdraw consent; and to appeal or complain to a privacy regulator.</p>
+      <p>Most Lea content is under your direct control because it exists only on your device. You can edit it in the App, export it using the backup feature, or remove it using <strong>Erase everything</strong>. You can stop future optional analytics using Lea's analytics privacy control. For information processed by us or our providers, contact <a href="mailto:support@leareads.com">support@leareads.com</a>. We may ask for information reasonably necessary to verify and fulfill your request. We will not discriminate against you for exercising a privacy right.</p>
+      <p>If you are in the EEA or UK, you may lodge a complaint with your local data-protection authority. We encourage you to contact us first so we can try to resolve the issue.</p>
     </section>
 
     <section>
-      <h2>Contact</h2>
-      <p class="placeholder"><!-- PLACEHOLDER -->
-        Questions about this policy can be sent to
-        <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a>.
+      <h2>9. Children</h2>
+      <p>Lea is a general-audience reading tool and is not designed specifically for children. Lea does not ask for a date of birth and does not require an account. If a user is not old enough under the law where they live to make their own privacy choices, a parent or legal guardian should make those choices for them and supervise their use of the App. Optional analytics should not be enabled by a child without any consent required from their parent or guardian. We do not use analytics to advertise to children or create marketing profiles. If you believe we have processed a child's personal data without the authorization required by law, contact us so we can investigate and take appropriate action.</p>
+    </section>
+
+    <section>
+      <h2>10. Security and data loss</h2>
+      <p>We use reasonable technical and organizational measures appropriate to the nature of the information. No device or transmission method is completely secure. Because your core Lea data is local, its security also depends on your device passcode, operating-system security, and how you handle exported backups.</p>
+      <p>Lea does not provide cloud recovery for your bookshelf or reading history. If your device is lost, damaged, reset, or the App is deleted, your information may be unrecoverable unless you created a backup.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this Privacy Policy when Lea's features, providers, or legal obligations change. We will update the date above and, where required, provide additional notice in the App or through the store listing. Material changes will apply prospectively unless the law permits otherwise.</p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <p>
+        <strong>VISTE LTD</strong><br />
+        Company number: <strong>13232923</strong><br />
+        <strong>87 Chancery Lane, Third Floor, A&amp;T</strong><br />
+        <strong>London, United Kingdom, WC2A 1ET</strong><br />
+        <strong><a href="mailto:support@leareads.com">support@leareads.com</a></strong>
       </p>
     </section>
   </main>
 
   <footer class="legal-footer">
-    <span>&copy; <!-- PLACEHOLDER -->[YEAR] [LEGAL ENTITY NAME]</span>
+    <span>&copy; 2026 VISTE LTD</span>
     <span class="links">
       <a href="index.html">Home</a>
       <a href="terms.html">Terms</a>
